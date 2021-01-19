@@ -19,11 +19,13 @@ body{
 	border: 1px solid #000;
 	flex-wrap: wrap;
 	transition: 1s;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
 }
 .gameContainer .cord{
 	transform-style: preserve-3d;
-	height: 100px;
-	width: 125px;
+/* 	height: 100px; */
+/* 	width: 125px; */
 	position: relative;
 	transition: 1s;
 }
