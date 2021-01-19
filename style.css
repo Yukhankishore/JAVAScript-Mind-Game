@@ -1,0 +1,47 @@
+body{
+	background: linear-gradient(to left,#2193b0,#6dd5ed);
+}
+.container{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 5000px;
+}
+.gameContainer{
+	transform-style: preserve-3d;
+	position: relative;
+	display: flex;
+	width: 500px;
+  	height: 400px;
+	border: 1px solid #000;
+	flex-wrap: wrap;
+	transition: 1s;
+}
+.gameContainer .cord{
+	transform-style: preserve-3d;
+	height: 100px;
+	width: 125px;
+	position: relative;
+	transition: 1s;
+}
+.front{
+	position: absolute;
+}
+.back{
+	position: absolute;
+	transform: rotateY(180deg);
+}
+.gameContainer .cord img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: gray;
+	/*opacity: 0.5;*/
+}
+
+.flip{
+	transform: rotateY(180deg);
+}
